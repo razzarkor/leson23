@@ -5,11 +5,49 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    <h1>hello world</h1>
-    
+   <div id="targil3">
+       <input id="text" placeholder="write here">
+    <br>
+    <button id="click" onclick="checkForA()">click</button>
+   </div>
+
+   <div id="targil 7">
+       <h1 class="headline">register</h1>
+       <div id="inputs">
+         <input id="username" placeholder="enter username">
+         <p id="useralert" class="alerts"></p>
+         <input id="mail" placeholder="enter email">
+         <p id="mailalert" class="alerts"></p>
+         <input id="password" type="password" placeholder="enter password 6-8 characters">
+         <p id="passalert" class="alerts"></p>
+         <input id="confirm" type="password" placeholder="confirm password">
+         <p id="confirmalert" class="alerts"></p>
+    </div>
+    <br>
+    <button id="submit" onclick="checkInputs()">submit</button>
+    <p id="sucsess"></p>
+   </div>
+
+   <div id="targil8">
+       <h1 class="headline">calculator</h1>
+       <div id="container">
+    <div id="input1">
+       <input id="shekel" type="number" placeholder="amount in nis.">
+       <input id="change" placeholder="enter a currency or symbol">
+    </div>
+       <button id="submit1" onclick="currencyChange()">submit</button>
+       <ul id="currency">
+           <lh id="head">currency types:</lh>
+           <li>$ dollar- 3.9</li>
+           <li>€ euro- 4.2</li>
+           <li>£ pound- 5.0</li>
+       </ul>
+       <p id="ans"></p>
+   </div>
+   </div>
+    <script src='script.js'></script>
 </body>
 </html>
